@@ -1,0 +1,86 @@
+/* Variáveis de cores da INCIT */
+:root {
+    --incit-green: #4CAF50;
+    --incit-purple: #673AB7;
+    --incit-gray: #757575;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --hover-green: #45a049;
+}
+
+/* Estilo do container do sidebar */
+.sidebar-container {
+    padding: 1rem;
+    background-color: var(--white);
+    border-right: 1px solid var(--light-gray);
+}
+
+/* Estilo do logo no sidebar */
+.sidebar-logo {
+    width: 80%;
+    margin: 1rem auto;
+    display: block;
+}
+
+/* Estilo dos links do menu */
+.sidebar-menu {
+    margin-top: 2rem;
+}
+
+.sidebar-menu-item {
+    padding: 0.8rem 1rem;
+    margin: 0.2rem 0;
+    border-radius: 5px;
+    color: var(--incit-gray);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu-item:hover {
+    background-color: var(--light-gray);
+    color: var(--incit-green);
+}
+
+.sidebar-menu-item.active {
+    background-color: var(--incit-green);
+    color: var(--white);
+}
+
+/* Ícones do menu */
+.sidebar-menu-icon {
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+}
+
+/* Botão de logout */
+.sidebar-logout {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    padding: 0.8rem;
+    background-color: var(--incit-purple);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar-logout:hover {
+    background-color: #5c33a4;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sidebar-container {
+        padding: 0.5rem;
+    }
+    
+    .sidebar-menu-item {
+        padding: 0.5rem;
+    }
+}
